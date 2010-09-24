@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>::title::</title>
+		<link rel="stylesheet" type="text/css" href="styles_inner.css" />
+	</head>
+	<body>
+		<h2>Render via Flash</h2>
+		<p>1. Make Graphviz render the gv file to an xdot file</p>
+		<p><pre>::command::</pre></p>
+		<p>2. Here is the xdot output</p>
+		<p><pre>::data::</pre></p>
+		<p>3. Embed a Flash movie in an HTML page an link the xdot file to it</p>
+		<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+			width="::graph_width::"
+			height="::graph_height::"
+			id="haxe"
+			align="middle">
+		<param name="movie" value="::graph::?input=::input::"/>
+		<param name="allowScriptAccess" value="always" />
+		<param name="quality" value="high" />
+		<param name="scale" value="noscale" />
+		<param name="salign" value="lt" />
+		<param name="bgcolor" value="#ffffff"/>
+		<param name="FlashVars" value="input=::input::" />
+		<embed src="::graph::?input=::input::"
+			   bgcolor="#ffffff"
+			   width="::graph_width::"
+			   height="::graph_height::"
+			   name="haxe"
+			   quality="high"
+			   align="middle"
+			   allowScriptAccess="always"
+			   type="application/x-shockwave-flash"
+			   pluginspage="http://www.macromedia.com/go/getflashplayer"
+		/>
+		</object>
+	</body>
+</html>
