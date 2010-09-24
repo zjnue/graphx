@@ -1,0 +1,6 @@
+-main Convert
+-cp ../src
+-x Convert
+-resource ../tpl/index.html@index_html
+-resource ../tpl/in.html@in_html
+-resource ../tpl/out.html@out_html

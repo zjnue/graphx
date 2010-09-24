@@ -1,0 +1,19 @@
+Here are some quick instructions to get you started
+
+1. In order to test Graphx, make sure you have the following installed:
+
+- haXe : http://haxe.org/download
+- Graphviz : http://www.graphviz.org/Download.php
+
+2. Make sure the dot executable (which comes with Graphviz) is in your path.
+
+3. Place any Graphviz files (*.gv) you want to test in the tpl folder
+(why not take some from the Graphviz gallery page: http://www.graphviz.org/Gallery.php)
+
+4. From the commandline, navigate to the build folder and run:
+"haxe Convert.hxml"
+If you are on Windows, you should just be able to double-click the hxml file
+
+5. Navigate to the bin folder and open the *.index.html files in your browser
+
+That's it!
